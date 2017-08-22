@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>ECharts</title>
+    <script src='https://cdn.bootcss.com/echarts/3.2.2/echarts.simple.js'></script>
+    <script type="text/javascript" src="http://data-visual.cn/datav/src/js/echarts/extension/echarts-wordcloud.min.js"></script>
+</head>
+
+<body>
+    <style>
+        html,
+        body,
+        #main {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+        }
+    </style>
+    <div id="main" style="width:1300px;height:620px; ">
+    </div>
+    <script type="text/javascript ">
+        var myChart = echarts.init(document.getElementById('main'));
+        var option = {
+    "title": [
+        {
+            "text": "",
+            "subtext": "",
+            "left": "auto",
+            "top": "auto",
+            "textStyle": {
+                "color": "#000",
+                "fontSize": 18
+            },
+            "subtextStyle": {
+                "color": "#aaa",
+                "fontSize": 12
+            }
+        }
+    ],
+    "toolbox": {
+        "show": true,
+        "orient": "vertical",
+        "left": "right",
+        "top": "center",
+        "feature": {
+            "saveAsImage": {
+                "show": true
+            }
+        }
+    },
+    "_index_flag": 1647008,
+    "tooltip": {},
+    "series": [
+        {
+            "type": "wordCloud",
+            "name": "",
+            "shape": "circle",
+            "rotationRange": [
+                -90,
+                90
+            ],
+            "rotationStep": 45,
+            "girdSize": 20,
+            "sizeRange": [
+                20,
+                100
+            ],
+            "data": [
+                {
+                    "name": "武汉市",
+                    "value": 10000,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(29,21,124)"
+                        }
+                    }
+                },
+                {
+                    "name": "襄阳市",
+                    "value": 6181,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(111,46,75)"
+                        }
+                    }
+                },
+                {
+                    "name": "荆州市",
+                    "value": 4386,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(15,65,158)"
+                        }
+                    }
+                },
+                {
+                    "name": "荆门市",
+                    "value": 4055,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(68,67,51)"
+                        }
+                    }
+                },
+                {
+                    "name": "宜昌市",
+                    "value": 2467,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(73,59,74)"
+                        }
+                    }
+                },
+                {
+                    "name": "仙桃市",
+                    "value": 2244,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(20,134,84)"
+                        }
+                    }
+                },
+                {
+                    "name": "十堰市",
+                    "value": 1898,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(17,119,55)"
+                        }
+                    }
+                },
+                {
+                    "name": "天门市",
+                    "value": 1484,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(39,45,101)"
+                        }
+                    }
+                },
+                {
+                    "name": "潜江市",
+                    "value": 1112,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(68,158,68)"
+                        }
+                    }
+                },
+                {
+                    "name": "黄冈市",
+                    "value": 965,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(23,13,117)"
+                        }
+                    }
+                },
+                {
+                    "name": "黄石市",
+                    "value": 847,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(90,128,20)"
+                        }
+                    }
+                },
+                {
+                    "name": "咸宁市",
+                    "value": 582,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(126,111,96)"
+                        }
+                    }
+                },
+                {
+                    "name": "孝感市",
+                    "value": 555,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(36,142,124)"
+                        }
+                    }
+                },
+                {
+                    "name": "随州市",
+                    "value": 550,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(60,88,71)"
+                        }
+                    }
+                },
+                {
+                    "name": "鄂州市",
+                    "value": 462,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(96,11,113)"
+                        }
+                    }
+                },
+                {
+                    "name": "神农架林区",
+                    "value": 366,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(136,68,9)"
+                        }
+                    }
+                },
+                {
+                    "name": "恩施土家族苗族自治州",
+                    "value": 360,
+                    "textStyle": {
+                        "normal": {
+                            "color": "rgb(128,63,136)"
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "legend": [
+        {
+            "data": []
+        }
+    ],
+    "backgroundColor": "#fff"
+};
+        myChart.setOption(option);
+    </script>
+</body>
+
+</html>

@@ -13,6 +13,9 @@ git push origin master
 git pull origin master
 
 
+git checkout -- .
+
+
 在实际世界的学习和映射过程中。
 
 必须先说明的问题：
